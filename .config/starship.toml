@@ -83,11 +83,12 @@ style = "black bg:yellow"  # shown during rebase, merge, etc.
 
 [time]
 disabled = false
-time_format = "%T"
+#time_format = "%T" #HH:MM:SS
+time_format = "%R" #HH:MM
 format = '[[  $time ](fg:crust bg:lavender)]($style)'
 
 [line_break]
-disabled = true
+disabled = false
 
 [character]
 disabled = false
@@ -104,7 +105,8 @@ format = " in $duration "
 style = "bg:lavender"
 disabled = false
 show_notifications = true
-min_time_to_notify = 45000
+# Issues notification for processes that exceed 3s
+min_time_to_notify = 3000
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
