@@ -1,0 +1,12 @@
+# Alright then, keep your secrets
+*
+
+# But not these
+!.gitignore
+!.bashrc
+!.config/
+!.config/alacritty/
+!.config/alacritty/alacritty.toml
+!.config/nvim/
+!.config/nvim/init.vim
+!.config/starship.toml

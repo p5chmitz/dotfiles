@@ -1,0 +1,22 @@
+[window]
+dimensions = { columns = 100, lines = 100 }
+decorations = "None" # Default Full
+startup_mode = "Maximized"
+dynamic_title = true # Likely disabled by decorations None
+padding = { x = 10, y = 10 }
+
+[scrolling]
+# history = 20000 # Default 10000
+
+[font]
+normal = { family = "Hack Nerd Font Propo", style = "Regular" }
+size = 11.0
+
+[cursor]
+style = { shape = "Block", blinking = "Always" }
+blink_timeout = 0 # Cursor never stops blinking
+
+[colors]
+#primary.background = "#322d3d" 
+primary.background = "#221e29"
+#primary.background = "#FFFFFF"
