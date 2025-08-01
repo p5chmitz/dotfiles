@@ -96,8 +96,10 @@ nnoremap <silent> gd :lua vim.lsp.buf.definition()<CR>
 
 " Telescope bindings
 " NOTE: Live grep requires a Ripgrep install
-nnoremap <leader>ff <cmd>Telescope find_files<CR>
-nnoremap <leader>fg <cmd>Telescope live_grep<CR> 
+" nnoremap <leader>ff <cmd>Telescope find_files<CR>
+nnoremap <leader>ff :lua require('telescope.builtin').find_files({ find_command = { "rg", "--no-ignore", "--hidden", "--files" } })<CR>
+" nnoremap <leader>fg <cmd>Telescope live_grep<CR> 
+nnoremap <leader>fg :lua require('telescope.builtin').live_grep({ additional_args = function() return { "--hidden", "--no-ignore" } end })<CR>
 nnoremap <leader>fb <cmd>Telescope buffers<CR>
 nnoremap <leader>fh <cmd>Telescope help_tags<CR>
 
