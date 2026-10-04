@@ -19,7 +19,8 @@ Use this cheat sheet when setting up a new Linux install. Most instructions use 
         2. Extract and place the extracted folder into /usr/local/share/fonts/
         NOTE: This can be accomplished in a single inline terminal command from the Fish shell:
         curl -L https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/Hack.zip -o /tmp/Hack.zip; sudo unzip -q /tmp/Hack.zip -d /usr/local/share/fonts; rm /tmp/Hack.zip
-    3. Install Alacritty You can either install Alacritty with Rust or build it from source
+    3. Install Alacritty 
+        You can either install Alacritty with Rust or build it from source
         1. cargo install alcaritty
         OR
         1. Clone the repo into a suitable directory
